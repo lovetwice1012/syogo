@@ -43,10 +43,10 @@ class Main extends PluginBase implements Listener{
  
 
                     $tag = $args[1]; 
-		    $config->set($player->getName(), "[§d".$tag."§r]".$player->getName());
+		    $config->set($player->getName(), "[".$tag."§r]".$player->getName());
 		    $config->save();
-		    $player->setNameTag("[§d".$tag."§r]".$player->getName());
-		    $player->setDisplayName("[§d".$tag."§r]".$player->getName());
+		    $player->setNameTag("[".$tag."§r]".$player->getName());
+		    $player->setDisplayName("[".$tag."§r]".$player->getName());
 		}else{
 			$player = $this->getServer()->getPlayer($sender->getName());
 			$config->set($player->getName(),$player->getName());
