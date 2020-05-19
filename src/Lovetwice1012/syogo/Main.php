@@ -26,7 +26,6 @@ class Main extends PluginBase implements Listener{
 	public function onJoin(PlayerJoinEvent $event){
 		$config = $this->myConfig;
   $player = $event->getPlayer();
-  /** @var Config $config */
   if($config->exists($player->getName())){
 	  $player->setNameTag($config->get($player->getName()));
 	  $player->setDisplayName($config->get($player->getName()));
