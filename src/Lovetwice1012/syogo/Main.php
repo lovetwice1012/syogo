@@ -35,7 +35,7 @@ class Main extends PluginBase implements Listener{
 	public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool
 	{
 		$config = $this->myConfig;
-        if ($label === "syogo") {
+        if ($label === "syo") {
             
 		if(isset($args[0])){
 		if(isset($args[1])){    
